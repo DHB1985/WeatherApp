@@ -53,8 +53,7 @@ span {
 
 .titleBox {
   display: flex;
-  /*align-items: flex-end;
-    justify-content: flex-end;*/
+
   align-self: flex-end;
   padding: 2px 2px;
   margin: 1px 1px;
@@ -83,8 +82,3 @@ span {
   background-image: url("https://i.pinimg.com/originals/53/78/6d/53786d55a260fd1414119b189315b09c.jpg");
   color: white;
 }
-
-/* img {
-    opacity:0.4;
-    filter:alpha(opacity=40); 
-   } */

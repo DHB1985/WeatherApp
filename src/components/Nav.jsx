@@ -7,11 +7,11 @@ import "./Nav.css";
 function Nav({ onSearch }) {
   return (
     <nav className="logoBar">
-        <div>
-      <Link to="/" className="link">
+      <div>
+        <Link to="/" className="link">
           <span>WeatherApp</span>
-      </Link>
-        </div>
+        </Link>
+      </div>
       <div>
         <SearchBar onSearch={onSearch} />
       </div>
