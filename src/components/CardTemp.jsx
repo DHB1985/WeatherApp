@@ -4,8 +4,8 @@ import "./CardTemp.css"
 function CardTemp({label, value}){
     return(
         <div className = 'inlineBox'>
-          <label><b>{label}</b></label>
-          <span>{value}º</span>
+          <label className="label">{label}</label>
+          <span className="value">{value}º</span>
         </div>
     )
   }
