@@ -5,6 +5,8 @@
   justify-content: center;
 }
 
+
+/* De aca en adelante es el CSS para la barra de búsqueda*/
 * {
   border: 0;
   box-sizing: border-box;
@@ -155,3 +157,4 @@ input {
     background: #f1f1f1;
   }
 }
+/*Acá termina el CSS de la barra de búsqueda*/
