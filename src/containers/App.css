@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+  
+  background: -prefix-linear-gradient(top, #59c3c3, white);
+
+  
+  background: linear-gradient(to bottom, #59c3c3, white);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
