@@ -1,0 +1,15 @@
+.cardsBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    Justify-content:center;
+   
+    padding: 15px 15px;
+    margin: 10px;
+    border: 1px 1px;
+}
+
+
+@media screen{
+    
+}
