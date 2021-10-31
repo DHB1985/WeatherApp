@@ -1,9 +1,9 @@
-.logoBar{
+.logoBar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content:space-between;
-  background-color:rgb(255,255,255,0.3);
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.3);
   border: 1px solid gray;
   height: 65px;
   padding: 15px 15px;
@@ -11,12 +11,11 @@
   border-radius: 15px;
 }
 
-.link{
+.link {
   text-decoration: none;
-  color: black
+  color: black;
 }
-.link:hover{
+.link:hover {
   text-decoration: none;
-  color: black
+  color: black;
 }
- 

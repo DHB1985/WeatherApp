@@ -5,7 +5,6 @@ import CardTemp from "./CardTemp";
 import styles from "./Card.module.css";
 
 export default function Card({ name, min, max, img, onClose, id }) {
-
   let imgSelector = "i" + { img }.img;
 
   function handleOnClose() {

@@ -8,13 +8,12 @@ import Ciudad from "../components/Ciudad.jsx";
 
 import "./App.css";
 
-const API_KEY = process.env.REACT_APP_API_KEY
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`
     )
@@ -40,7 +39,7 @@ function App() {
         }
       });
   }
-  
+
   function onFilter(ciudadId) {
     let ciudad = cities.filter((c) => c.id === parseInt(ciudadId));
     if (ciudad.length > 0) {
