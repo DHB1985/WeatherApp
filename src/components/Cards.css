@@ -8,5 +8,10 @@
   border: 1px 1px;
 }
 
-@media screen {
+@media screen and (max-width: 800px)  {
+  .cardsBox{
+    background-color: red;
+   max-width: 50%;
+   min-width: 50%;
+  }
 }
