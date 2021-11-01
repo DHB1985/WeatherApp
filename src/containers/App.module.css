@@ -1,13 +1,17 @@
 .App {
   text-align: center;
-
   background: linear-gradient(to bottom, #59c3c3, white);
+  width:100%;
+  height:100%;
+  padding: 0.25%;
+  border-width: thin ;
+  margin: 0.25%;
 }
 
 @media only screen and (max-width: 414px) {
   .App {
     width: 414px;
-    height: 735px;
+    height: 100%;
     padding: 0.25%;
     border-width: thin ;
     margin: 0.25%;
