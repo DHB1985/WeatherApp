@@ -6,12 +6,10 @@
   padding: 15px 15px;
   margin: 10px;
   border: 1px 1px;
+  background-color: red;
 }
-
-@media screen and (max-width: 800px)  {
+@media screen and (max-width: 500px)  {
   .cardsBox{
-  
-   max-width: 50%;
-   min-width: 50%;
+background-color: salmon;
   }
 }

@@ -2,20 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import SearchBar from "./SearchBar.jsx";
-import "./Nav.css";
+import styles from "./Nav.module.css";
 
 function Nav({ onSearch }) {
   return (
-    <nav className="logoBar">
+    <nav className={styles.logoBar}>
       <div>
-        <Link to="/" className="link">
+        <Link to="/" className={styles.link}>
           <span>WeatherApp</span>
         </Link>
       </div>
       <div>
         <SearchBar onSearch={onSearch} />
       </div>
-      <Link to="/about" className="link">
+      <Link to="/about" className={styles.link}>
         <span>About</span>
       </Link>
     </nav>

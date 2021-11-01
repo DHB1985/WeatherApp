@@ -6,7 +6,8 @@ import Nav from "../components/Nav";
 import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
 
-import "./App.css";
+import styles from "./App.module.css"
+
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
@@ -54,7 +55,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
       <Route path="/about" component={About} />
       <Route
