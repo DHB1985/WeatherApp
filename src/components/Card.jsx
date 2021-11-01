@@ -20,7 +20,7 @@ export default function Card({ name, min, max, img, onClose, id }) {
       </div>
 
       <Link to={`/ciudad/${id}`}>
-        <h2>{name}</h2>
+        <h2 className="city">{name}</h2>
       </Link>
 
       <div className={styles.tempBox}>

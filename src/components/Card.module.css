@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid gray;
-  width: 300px;
+  width: 400px;
   height: 300px;
   padding: 15px 15px;
   margin: 10px;
@@ -13,6 +13,12 @@
   opacity: 1;
 }
 
+@media screen {
+  .cardBox{
+   max-width: 33%;
+   min-width: 25%;
+  }
+}
 .btnClose {
   display: flex;
   align-items: center;
@@ -44,6 +50,7 @@
   border: 1px 1px;
   margin: 1px 1px;
 }
+
 
 span {
   display: inline;
@@ -81,4 +88,5 @@ span {
 .i01n {
   background-image: url("https://i.pinimg.com/originals/53/78/6d/53786d55a260fd1414119b189315b09c.jpg");
   color: white;
+  opacity: 0.4;
 }
