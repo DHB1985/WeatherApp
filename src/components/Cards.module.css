@@ -1,21 +1,26 @@
 .cardsBox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 15px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* padding: 15px 15px;
     margin: 10px 10px;
-    border: 1px 1px;
-    width: 50%;
-    height: 50%;
-
+    border: 1px 1px; */
+  width: 50%;
+  height: 50%;
 }
-  
 
-@media screen and (max-width: 500px)  {
-    .cardsBox{
-    border: seagreen;
-     max-width: 100%;
-     min-width: 100%;
-    }
+@media screen and (max-width: 414px) {
+  .cardsBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    padding: 0.25%;
+    border-width: thin ;
+    margin: 0.25%;
   }
+}

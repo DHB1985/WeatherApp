@@ -18,20 +18,22 @@ export default function Card({ name, min, max, img, onClose, id }) {
           X
         </button>
       </div>
+      <div className={styles.celDataBox}>
+        
+        <Link to={`/ciudad/${id}`}>
+          <p className={styles.cityName}>{name}</p>
+        </Link>
 
-      <Link to={`/ciudad/${id}`}>
-        <h2 className="city">{name}</h2>
-      </Link>
+        <div className={styles.tempBox}>
+          <CardTemp label="Min" value={min} />
+          <CardTemp label="Max" value={max} />
+        </div>
 
-      <div className={styles.tempBox}>
-        <CardTemp label="Min" value={min} />
-        <CardTemp label="Max" value={max} />
+        <img
+          src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+          alt="img ot found"
+        />
       </div>
-
-      <img
-        src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-        alt="img ot found"
-      />
     </div>
   );
 }

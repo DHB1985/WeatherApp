@@ -70,8 +70,7 @@ function App() {
         path="/"
         render={() => <Cards cities={cities} onClose={onClose} />}
       />
-      <hr />
-    </div>
+       </div>
   );
 }
 
