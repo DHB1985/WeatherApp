@@ -4,9 +4,12 @@
   background: linear-gradient(to bottom, #59c3c3, white);
 }
 
-@media only screen and (max-width: 100){
+@media only screen and (max-width: 300px){
   .App {
  background-color: red;
+ background: linear-gradient(to bottom, #eb08a7, white);
+ width: 414px;
+ height: 736px;
   }
   
 }
