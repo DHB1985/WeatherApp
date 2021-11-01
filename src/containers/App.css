@@ -4,6 +4,13 @@
   background: linear-gradient(to bottom, #59c3c3, white);
 }
 
+@media only screen and (max-width: 100){
+  .App {
+ background-color: red;
+  }
+  
+}
+
 .row {
   display: flex;
   justify-content: center;

@@ -13,10 +13,9 @@
   opacity: 1;
 }
 
-@media screen {
+@media only screen and (max-width: 414) {
   .cardBox{
-   max-width: 33%;
-   min-width: 25%;
+background-color: red;
   }
 }
 .btnClose {

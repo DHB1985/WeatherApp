@@ -1,5 +1,7 @@
 import React from "react";
 
+import styles from "./Ciudad.module.css"
+
 export default function Ciudad({ city }) {
   if (city) {
     return (

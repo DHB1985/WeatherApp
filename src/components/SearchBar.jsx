@@ -1,5 +1,5 @@
 import React from "react";
-import "./SearchBar.css";
+import styles from "./SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
   let [city, setCity] = React.useState("");
@@ -17,8 +17,8 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="contentBox">
-      <form action="" className="search-bar" onSubmit={handleOnSearch}>
+    <div className={styles.contentBox}>
+      <form action="" className={styles.searchbar} onSubmit={handleOnSearch} autocomplete="off">
         <input
           type="text"
           id="inputSearch"
@@ -29,7 +29,7 @@ export default function SearchBar({ onSearch }) {
           value={city.city}
           onChange={(e) => handleChange(e)}
         />
-        <button className="search-btn" type="submit">
+        <button className={styles.searchbtn} type="submit">
           <span>Search</span>
         </button>
       </form>

@@ -1,11 +1,12 @@
 import React from "react";
 import Card from "./Card";
-import "./Cards.css";
+import styles from "./Cards.module.css";
+
 
 export default function Cards({ cities, onClose }) {
   if ({ cities }) {
     return (
-      <div className="cardsBox">
+      <div className={styles.cardsBox}>
         {cities.map((city) => (
           <Card
             key={city.id}
@@ -20,6 +21,6 @@ export default function Cards({ cities, onClose }) {
       </div>
     );
   } else {
-    return <div className="cardsBox">Sin Ciudades</div>;
+    return <div className={styles.cardsBox}>Sin Ciudades</div>;
   }
 }

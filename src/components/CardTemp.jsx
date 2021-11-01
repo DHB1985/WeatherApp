@@ -1,11 +1,11 @@
 import React from "react";
-import "./CardTemp.css";
+import styles from "./CardTemp.module.css";
 
 function CardTemp({ label, value }) {
   return (
-    <div className="inlineBox">
-      <label className="label">{label}</label>
-      <span className="value">{value}º</span>
+    <div className={styles.inlineBox}>
+      <label className={styles.label}>{label}</label>
+      <span className={styles.value}>{value}º</span>
     </div>
   );
 }
