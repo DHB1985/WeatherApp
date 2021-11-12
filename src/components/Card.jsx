@@ -12,27 +12,31 @@ export default function Card({ name, min, max, img, onClose, id }) {
   }
 
   return (
-    <div className={styles.cardBox + " " + styles[imgSelector]}>
-      <div className={styles.titleBox}>
-        <button className={styles.btnClose} onClick={handleOnClose}>
-          X
-        </button>
-      </div>
-      <div className={styles.celDataBox}>
-        
-        <Link to={`/ciudad/${id}`}>
-          <p className={styles.cityName}>{name}</p>
-        </Link>
-
-        <div className={styles.tempBox}>
-          <CardTemp label="Min" value={min} />
-          <CardTemp label="Max" value={max} />
+    <div className={styles.cardBox}>
+      <img
+        className={styles[imgSelector]}
+        src="https://thumbs.dreamstime.com/z/escalera-al-cielo-escaleras-en-cielo-91862193.jpg"
+        alt=""
+      />
+      <div className={styles.content}>
+        <div className={styles.titleBox}>
+          <button className={styles.btnClose} onClick={handleOnClose}></button>
         </div>
+        <div className={styles.celDataBox}>
+          <Link to={`/ciudad/${id}`}>
+            <span className={styles.cityName}>{name}</span>
+          </Link>
 
-        <img
-          src={`http://openweathermap.org/img/wn/${img}@2x.png`}
-          alt="img ot found"
-        />
+          <div className={styles.tempBox}>
+            <CardTemp label="Min" value={min} />
+            <CardTemp label="Max" value={max} />
+          </div>
+
+          <img
+            src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+            alt="img ot found"
+          />
+        </div>
       </div>
     </div>
   );
