@@ -10,10 +10,10 @@
   height: 50%;
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .cardsBox {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
