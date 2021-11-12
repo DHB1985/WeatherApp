@@ -18,8 +18,9 @@ export default function SearchBar({ onSearch }) {
 
   return (
     <div className={styles.contentBox}>
-      <form action="" className={styles.searchbar} onSubmit={handleOnSearch} autocomplete="off">
+      <form action="" className={styles.searchBar} onSubmit={handleOnSearch} autocomplete="off">
         <input
+          className={styles.inputSearch}
           type="text"
           id="inputSearch"
           name="inputSearch"
@@ -30,7 +31,8 @@ export default function SearchBar({ onSearch }) {
           onChange={(e) => handleChange(e)}
         />
         <button className={styles.searchbtn} type="submit">
-          <span>Search</span>
+          {/* <span>Search</span> */}
+          <i class="fa fa-search"></i>
         </button>
       </form>
     </div>

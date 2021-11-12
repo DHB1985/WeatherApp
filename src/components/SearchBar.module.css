@@ -1,7 +1,34 @@
-.contentBox {
+/* .contentBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+@media only screen and (max-width: 415px) {
+
+  .searchBar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
-  
+  .inputSearch {
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .searchbtn {
+    width: 18%;
+    height: 40px;
+    border: 1px solid rgb(27, 0, 145);
+    background: rgb(27, 0, 145);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
