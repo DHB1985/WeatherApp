@@ -9,12 +9,12 @@ import Ciudad from "../components/Ciudad.jsx";
 import styles from "./App.module.css"
 
 
-const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
-
+  
   function onSearch(ciudad) {
+    const API_KEY = process.env.REACT_APP_API_KEY;
     fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${API_KEY}&units=metric`
     )
