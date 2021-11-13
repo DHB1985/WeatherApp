@@ -8,8 +8,8 @@ import Ciudad from "../components/Ciudad.jsx";
 
 import styles from "./App.module.css"
 
-//const API_KEY = process.env.REACT_APP_API_KEY;
-const API_KEY = '0f76b65b92f6d45e109e82e0a956e74d'
+
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [cities, setCities] = useState([]);
