@@ -1,4 +1,4 @@
-.cardsBox {
+/* .cardsBox {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -6,9 +6,9 @@
   /* padding: 15px 15px;
     margin: 10px 10px;
     border: 1px 1px; */
-  width: 50%;
-  height: 50%;
-}
+  /* width: 50%;
+  height: 50%; */
+/*} */
 
 @media screen and (max-width: 415px) {
   .cardsBox {
@@ -24,3 +24,21 @@
     margin: 0.25%;
   }
 }
+
+@media only screen and (min-width: 415px) and  (max-width: 736px){
+  .cardsBox {
+    display: flex;
+    flex-direction: row-reverse;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    height: 100%;
+    padding: 0.25%;
+    border-width: thin ;
+    margin: 0.25%;
+    /* align-content: stretch;
+    align-items: stretch; */
+  }
+}
+

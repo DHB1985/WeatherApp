@@ -15,7 +15,7 @@ export default function Card({ name, min, max, img, onClose, id }) {
     <div className={styles.cardBox}>
       <img
         className={styles[imgSelector]}
-        src="https://thumbs.dreamstime.com/z/escalera-al-cielo-escaleras-en-cielo-91862193.jpg"
+        src="https://i.imgur.com/eNNfbN4.jpg"
         alt=""
       />
       <div className={styles.content}>
