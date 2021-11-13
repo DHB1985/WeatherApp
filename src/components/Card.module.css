@@ -75,12 +75,24 @@ span {
   padding: 2px 2px;
   margin: 1px 1px;
 }
-.i02n,
-.i04n,
 .i01d,
-.i04d,
 .i01n,
-.i02d {
+.i02d,
+.i02n,
+.i03d,
+.i03n,
+.i04d,
+.i04n,
+.i09d,
+.i09n,
+.i10d,
+.i10n,
+.i11d,
+.i11n,
+.i13d,
+.i13n,
+.i50d,
+.i50n{
   opacity: 0.4;
   position: relative;
   size: cover;
