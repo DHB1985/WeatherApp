@@ -37,3 +37,37 @@
     font-size: 20px;
   }
 }
+
+@media only screen and (min-width: 415px) and  (max-width: 736px){
+
+  .searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .inputSearch {
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid rgb(27, 0, 145);
+  }
+
+  .inputSearch::placeholder {
+    text-align: center;
+  }
+
+  .searchbtn {
+    width: 18%;
+    height: 40px;
+    border: 1px solid rgb(27, 0, 145);
+    background: rgb(27, 0, 145);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+}
+
