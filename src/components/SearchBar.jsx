@@ -32,7 +32,7 @@ export default function SearchBar({ onSearch }) {
         />
         <button className={styles.searchbtn} type="submit">
           {/* <span>Search</span> */}
-          {/* <i class="fa fa-search"></i> */}
+           <i className="fa fa-search"></i> 
         </button>
       </form>
     </div>
