@@ -11,8 +11,8 @@
 .label {
   font-weight: bold;
   opacity: 1;
-  padding: 1px 1px;
-  margin: 1px 1px;
+  padding: 5px 5px;
+  margin: 5px 5px;
 }
 
 .value {

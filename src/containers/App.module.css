@@ -2,26 +2,21 @@
   text-align: center;
   background: linear-gradient(to bottom, #59c3c3, white);
   width: 100%;
-  min-height: 736px;
-  line-height: 100%;
+  min-height: 100vh;
   padding: 0.25%;
-
-
 }
 
 @media only screen and (max-width: 415px) {
   .App {
     width: 414px;
-    /* border-width: thin; */
   }
 }
 
-@media only screen and (min-width:416px) and (max-width: 736px) {
+@media only screen and (min-width: 416px) and (max-width: 736px) {
   .App {
     width: 736px;
     min-height: 414px;
     line-height: 100%;
-    /* border-width: thin; */
   }
 }
 

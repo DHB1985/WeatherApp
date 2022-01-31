@@ -1,14 +1,8 @@
-/* .cardsBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  /* padding: 15px 15px;
-    margin: 10px 10px;
-    border: 1px 1px; */
-/* width: 50%;
-  height: 50%; */
-/*} */
+.cardsBox{
+  display: grid;
+	grid-template-columns: repeat(3,1fr);
+   grid-auto-rows: minmax(25vh, 25vh); 
+  }
 
 @media screen and (max-width: 414px) {
   .cardsBox {

@@ -10,6 +10,11 @@ export default function Card({ name, min, max, img, onClose, id }) {
   function handleOnClose() {
     if (typeof onClose === "function") onClose(id);
   }
+let spanZise = {fontSize: "18px"}
+
+  if(name.length > 10){
+    spanZise = {fontSize: "14px"}
+  }
 
   return (
     <div className={styles.cardBox}>
@@ -24,7 +29,7 @@ export default function Card({ name, min, max, img, onClose, id }) {
         </div>
         <div className={styles.celDataBox}>
           <Link to={`/${id}`}>
-            <span className={styles.cityName}>{name}</span>
+            <span className={styles.cityName} style={spanZise}>{name}</span>
           </Link>
 
           <div className={styles.tempBox}>
