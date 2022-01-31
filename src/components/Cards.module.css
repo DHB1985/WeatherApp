@@ -10,7 +10,7 @@
   height: 50%; */
 /*} */
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 414px) {
   .cardsBox {
     display: flex;
     flex-direction: column-reverse;

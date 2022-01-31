@@ -57,7 +57,7 @@ function App() {
   return (
     <div className={styles.App}>
       <Route path="/" render={() => <Nav onSearch={onSearch} />} />
-      <Route path="/about" component={About} />
+      {/* <Route path="/about" component={About} /> */}
       <Route
         exact
         path="/ciudad/:ciudadId"

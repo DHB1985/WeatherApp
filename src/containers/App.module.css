@@ -5,16 +5,14 @@
   min-height: 736px;
   line-height: 100%;
   padding: 0.25%;
-  border-width: thin;
-  margin: 0.25%;
+
+
 }
 
 @media only screen and (max-width: 414px) {
   .App {
     width: 414px;
-    padding: 0.25%;
-    border-width: thin;
-    margin: 0.25%;
+    /* border-width: thin; */
   }
 }
 
