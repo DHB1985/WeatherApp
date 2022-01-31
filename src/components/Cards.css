@@ -1,0 +1,15 @@
+.cardsBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 15px;
+  margin: 10px;
+  border: 1px 1px;
+  background-color: red;
+}
+@media screen and (max-width: 500px)  {
+  .cardsBox{
+background-color: salmon;
+  }
+}

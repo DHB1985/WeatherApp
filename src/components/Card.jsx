@@ -23,7 +23,7 @@ export default function Card({ name, min, max, img, onClose, id }) {
           <button className={styles.btnClose} onClick={handleOnClose}></button>
         </div>
         <div className={styles.celDataBox}>
-          <Link to={`/ciudad/${id}`}>
+          <Link to={`/${id}`}>
             <span className={styles.cityName}>{name}</span>
           </Link>
 

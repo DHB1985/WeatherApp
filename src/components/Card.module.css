@@ -150,15 +150,15 @@ span {
   }
 }
 
-@media only screen and (min-width: 415px) and  (max-width: 736px){
+@media only screen and (min-width: 415px) and  (max-width: 737px){
   .cardBox {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 45%;
     height: 155px;
-    padding: 1%;
-    margin: 1%;
+    padding: 2px;
+    margin: 7px;
     /* border: 1px solid gray; */
     border-radius: 15px;
     position: relative;

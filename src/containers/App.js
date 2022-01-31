@@ -60,7 +60,7 @@ function App() {
       {/* <Route path="/about" component={About} /> */}
       <Route
         exact
-        path="/ciudad/:ciudadId"
+        path="/:ciudadId"
         render={({ match }) => (
           <Ciudad city={onFilter(match.params.ciudadId)} />
         )}
