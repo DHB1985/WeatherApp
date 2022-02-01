@@ -8,13 +8,13 @@
 
 @media only screen and (max-width: 415px) {
   .App {
-    width: 414px;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 416px) and (max-width: 736px) {
   .App {
-    width: 736px;
+    width: 100%;
     min-height: 414px;
     line-height: 100%;
   }
