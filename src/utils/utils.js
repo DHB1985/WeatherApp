@@ -1,4 +1,4 @@
-export function newIcons(icons) {
+export const newIcons = (icons) => {
   if (icons === "01d")
     return "https://res.cloudinary.com/dbcrozoip/image/upload/v1643718240/Icons/Clima/sol_sfshub.png";
   if (icons === "01n")
@@ -22,3 +22,7 @@ export function newIcons(icons) {
   if (icons === "50d" || icons === "50n")
     return "https://res.cloudinary.com/dbcrozoip/image/upload/v1643719174/Icons/Clima/niebla_vzshuy.png";
 }
+
+export const removeAccents = (str) => {
+   return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+ } 

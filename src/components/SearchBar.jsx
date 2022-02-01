@@ -1,4 +1,5 @@
 import React from "react";
+import { removeAccents } from "../utils/utils";
 import styles from "./SearchBar.module.css";
 
 export default function SearchBar({ onSearch }) {
@@ -10,7 +11,8 @@ export default function SearchBar({ onSearch }) {
 
   let handleOnSearch = (event) => {
     event.preventDefault();
-    onSearch(city.city);
+    const cityUnaccent = removeAccents(city.city)
+    onSearch(cityUnaccent);
     setCity({ city: "" });
   };
 
