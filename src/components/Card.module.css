@@ -132,6 +132,13 @@ a:hover {
     justify-content: space-between;
     width: 100%;
   }
+
+  .imgWeather {
+    size: cover;
+    background-size: 100% 100%;
+    width:  70px;
+    height: 70px;
+  }
 }
 
 @media only screen and (min-width: 415px) and (max-width: 737px) {
