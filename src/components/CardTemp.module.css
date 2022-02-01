@@ -30,3 +30,35 @@
   width: 25px;
   height: 25px;
 }
+
+@media only screen and (min-width: 415px) and (max-width: 737px) {
+  .inlineBox {
+    padding: 1px 1px;
+    margin: 1px 1px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: minmax(50%, auto);
+  }
+
+  .imgTemp {
+    grid-column: 2/2;
+    grid-row: 1/ 2;
+    width: 25px;
+    height: 25px;
+  }
+
+  .value {
+    opacity: 1;
+    grid-column: 1/2;
+    grid-row: 2 / 2;
+    padding: 1px 1px;
+    margin: 1px 1px;
+  }
+
+  .imgC {
+    grid-column: 2/2;
+    grid-row: 2 / 2;
+    width: 20px;
+    height: 20px;
+  }
+}

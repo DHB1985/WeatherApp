@@ -183,4 +183,11 @@ a:hover {
     justify-content: space-between;
     width: 100%;
   }
+
+  .imgWeather {
+    size: cover;
+    background-size: 100% 100%;
+    width:  50px;
+    height: 50px;
+  }
 }
