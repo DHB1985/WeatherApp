@@ -3,17 +3,15 @@ import { Route } from "react-router-dom";
 
 import Cards from "../components/Cards.jsx";
 import Nav from "../components/Nav";
-import About from "../components/About.jsx";
+// import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
 
-import styles from "./App.module.css"
+import styles from "./App.module.css";
 import { newIcons } from "../utils/utils.js";
-
-
 
 function App() {
   const [cities, setCities] = useState([]);
-  
+
   function onSearch(ciudad) {
     const API_KEY = process.env.REACT_APP_API_KEY;
     fetch(
@@ -72,7 +70,7 @@ function App() {
         path="/"
         render={() => <Cards cities={cities} onClose={onClose} />}
       />
-       </div>
+    </div>
   );
 }
 

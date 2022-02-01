@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./Ciudad.module.css";
 
 export default function Ciudad({ city }) {
-  console.log(city);
+
   if (city !== null) {
     return (
       <div className="ciudad">

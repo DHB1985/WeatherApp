@@ -5,9 +5,7 @@ export default function SearchBar({ onSearch }) {
   let [city, setCity] = React.useState("");
 
   let handleChange = (event) => {
-    console.log(event.target.value);
     setCity({ city: event.target.value });
-    console.log(city.city);
   };
 
   let handleOnSearch = (event) => {
@@ -18,20 +16,19 @@ export default function SearchBar({ onSearch }) {
 
   return (
     <div className={styles.contentBox}>
-      <form action="" className={styles.searchBar} onSubmit={handleOnSearch} autoComplete="off">
+      <form className={styles.searchBar}>
         <input
           className={styles.inputSearch}
           type="text"
           id="inputSearch"
           name="inputSearch"
           pattern=".*\S.*"
-          required
           placeholder="Buscar Ciudad..."
-          value={city.city}
-          onChange={(e) => handleChange(e)}
+          value={city.city || ""}
+          onChange={handleChange}
         />
-        <button className={styles.searchbtn} type="submit">
-           <i class="fa fa-search"></i> 
+        <button className={styles.searchbtn} onClick={handleOnSearch}>
+          <i className="fa fa-search"></i>
         </button>
       </form>
     </div>

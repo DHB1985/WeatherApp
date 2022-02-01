@@ -11,7 +11,7 @@
   border-radius: 15px;
 }
 
-@media screen and (max-width: 410){
+@media screen and (max-width: 410) {
   .logoBar {
     display: flex;
     flex-direction: row;
@@ -24,7 +24,6 @@
     margin: 10px;
     border-radius: 15px;
   }
-  
 }
 
 .link {

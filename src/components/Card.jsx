@@ -5,14 +5,13 @@ import CardTemp from "./CardTemp";
 import styles from "./Card.module.css";
 
 export default function Card({ name, min, max, img, onClose, id }) {
-
   function handleOnClose() {
     if (typeof onClose === "function") onClose(id);
   }
-let spanZise = {fontSize: "18px"}
+  let spanZise = { fontSize: "18px" };
 
-  if(name.length >= 10){
-    spanZise = {fontSize: "14px"}
+  if (name.length >= 10) {
+    spanZise = { fontSize: "14px" };
   }
 
   return (
@@ -28,15 +27,24 @@ let spanZise = {fontSize: "18px"}
         </div>
         <div className={styles.celDataBox}>
           <Link to={`/${id}`}>
-            <span className={styles.cityName} style={spanZise}>{name}</span>
+            <span className={styles.cityName} style={spanZise}>
+              {name}
+            </span>
           </Link>
 
           <div className={styles.tempBox}>
-            <CardTemp img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/frio_rrdg8v.png" value={min} />
-            <CardTemp img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/caliente_mfvrbb.png" value={max} />
+            <CardTemp
+              img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/frio_rrdg8v.png"
+              value={min}
+            />
+            <CardTemp
+              img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/caliente_mfvrbb.png"
+              value={max}
+            />
           </div>
 
-          <img className={styles.imgWeather}
+          <img
+            className={styles.imgWeather}
             //src={`http://openweathermap.org/img/wn/${img}@2x.png`}
             src={img}
             alt="img ot found"
