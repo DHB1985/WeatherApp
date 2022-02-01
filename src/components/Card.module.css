@@ -28,9 +28,6 @@
   background-repeat: no-repeat;
   background-position: center;
   border-color: transparent;
-  /* position: absolute;
-      top: 3%;
-    right: 3%; */
 }
 
 .celDataBox {
@@ -74,33 +71,22 @@ a:hover {
   color: black;
 }
 
-.i01d,
-.i01n,
-.i02d,
-.i02n,
-.i03d,
-.i03n,
-.i04d,
-.i04n,
-.i09d,
-.i09n,
-.i10d,
-.i10n,
-.i11d,
-.i11n,
-.i13d,
-.i13n,
-.i50d,
-.i50n {
+.imgBack {
   opacity: 0.4;
   position: relative;
   size: cover;
   background-size: 100% 100%;
   border-radius: 15px;
   border: 2px solid gray;
-
   width: 100%;
   height: 100%;
+}
+
+.imgWeather {
+  size: cover;
+  background-size: 100% 100%;
+  width: 90px;
+  height: 90px;
 }
 
 @media only screen and (max-width: 414px) {

@@ -7,6 +7,7 @@ import About from "../components/About.jsx";
 import Ciudad from "../components/Ciudad.jsx";
 
 import styles from "./App.module.css"
+import { newIcons } from "../utils/utils.js";
 
 
 
@@ -24,7 +25,8 @@ function App() {
           const ciudad = {
             min: Math.round(recurso.main.temp_min),
             max: Math.round(recurso.main.temp_max),
-            img: recurso.weather[0].icon,
+            img: newIcons(recurso.weather[0].icon),
+            //img: recurso.weather[0].icon,
             id: recurso.id,
             wind: recurso.wind.speed,
             temp: recurso.main.temp,

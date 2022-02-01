@@ -1,6 +1,6 @@
 .inlineBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 1px 1px;
@@ -19,4 +19,14 @@
   opacity: 1;
   padding: 1px 1px;
   margin: 1px 1px;
+}
+
+.imgC {
+  width:  20px;
+  height: 20px;
+}
+
+.imgTemp{
+  width:  25px;
+  height: 25px;
 }

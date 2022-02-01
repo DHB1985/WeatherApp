@@ -5,21 +5,20 @@ import CardTemp from "./CardTemp";
 import styles from "./Card.module.css";
 
 export default function Card({ name, min, max, img, onClose, id }) {
-  let imgSelector = "i" + { img }.img;
 
   function handleOnClose() {
     if (typeof onClose === "function") onClose(id);
   }
 let spanZise = {fontSize: "18px"}
 
-  if(name.length > 10){
+  if(name.length >= 10){
     spanZise = {fontSize: "14px"}
   }
 
   return (
     <div className={styles.cardBox}>
       <img
-        className={styles[imgSelector]}
+        className={styles.imgBack}
         src="https://i.imgur.com/eNNfbN4.jpg"
         alt=""
       />
@@ -33,12 +32,13 @@ let spanZise = {fontSize: "18px"}
           </Link>
 
           <div className={styles.tempBox}>
-            <CardTemp label="Min" value={min} />
-            <CardTemp label="Max" value={max} />
+            <CardTemp img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/frio_rrdg8v.png" value={min} />
+            <CardTemp img="https://res.cloudinary.com/dbcrozoip/image/upload/v1643718239/Icons/Clima/caliente_mfvrbb.png" value={max} />
           </div>
 
-          <img
-            src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+          <img className={styles.imgWeather}
+            //src={`http://openweathermap.org/img/wn/${img}@2x.png`}
+            src={img}
             alt="img ot found"
           />
         </div>
